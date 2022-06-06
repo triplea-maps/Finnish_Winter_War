@@ -1,0 +1,1187 @@
+<?xml version="1.0" ?>
+<!DOCTYPE game SYSTEM "game.dtd">
+<game>
+        <info name="Finnish Winter War" version="0.5"/>
+        <loader javaClass="games.strategy.triplea.TripleA"/>
+	<diceSides value="8"/>
+        <map>
+                <!-- Territory Definitions -->
+                <territory name="Pori"/>
+                <territory name="Salla"/>
+                <territory name="Lokka"/>
+                <territory name="Jyvaskyla"/>
+                <territory name="Helsinki"/>
+                <territory name="Vassa"/>
+                <territory name="Kotka"/>
+                <territory name="Vilpuri"/>
+                <territory name="Turku"/>
+                <territory name="Tampere"/>
+                <territory name="Inari"/>
+                <territory name="Kemi"/>
+                <territory name="Ladoga"/>
+                <territory name="Lahti"/>
+                <territory name="Oulu"/>
+                <territory name="Rybachy"/>
+                <territory name="Savonlinna"/>
+                <territory name="Petsamo"/>
+                <territory name="Kuopio"/>
+                <territory name="Swedish Assistance"/>
+                <territory name="International Assistance"/>
+                <territory name="Vyborg"/>
+                <territory name="Time Limit"/>
+                <territory name="Kasivarsi"/>
+                <territory name="Kingisepp"/>
+                <territory name="Volkhav"/>
+                <territory name="Lenningrad"/>
+                <territory name="Kem"/>
+                <territory name="Arkhangelsk"/>
+                <territory name="Mirny"/>
+                <territory name="Kola"/>
+                <territory name="Mezen"/>
+                <territory name="Kandalaksha"/>
+                <territory name="Olonets"/>
+                <territory name="Segezha"/>
+                <territory name="Belomorsk"/>
+                <territory name="Tikhvin"/>
+                <territory name="Murmansk"/>
+                <territory name="Volosovo"/>
+                <territory name="Petrozavodsk"/>
+                <territory name="Chiza"/>
+                <territory name="White Sea North" water="true"/>
+                <territory name="Mid Baltic" water="true"/>
+                <territory name="Lake Ladoga" water="true"/>
+                <territory name="White Sea South" water="true"/>
+                <territory name="South Baltic" water="true"/>
+                <territory name="Sweden"/>
+                <territory name="Estonia"/>
+                <territory name="South Sweden"/>
+                <territory name="Barents Sea" water="true"/>
+                <territory name="North Baltic" water="true"/>
+                <territory name="East Bay of Finland" water="true"/>
+                <territory name="Bay of Finland" water="true"/>
+                <territory name="Norway"/>
+
+                <!-- Territory Connections -->
+                <connection t1="Pori" t2="South Baltic"/>
+                <connection t1="Pori" t2="Tampere"/>
+                <connection t1="Pori" t2="Turku"/>
+                <connection t1="Pori" t2="Vassa"/>
+                <connection t1="Lokka" t2="Murmansk"/>
+                <connection t1="Lokka" t2="Norway"/>
+                <connection t1="Lokka" t2="Petsamo"/>
+                <connection t1="Lokka" t2="Salla"/>
+                <connection t1="Jyvaskyla" t2="Kuopio"/>
+                <connection t1="Jyvaskyla" t2="Lahti"/>
+                <connection t1="Jyvaskyla" t2="Oulu"/>
+                <connection t1="Jyvaskyla" t2="Salla"/>
+                <connection t1="Jyvaskyla" t2="Tampere"/>
+                <connection t1="Jyvaskyla" t2="Vassa"/>
+                <connection t1="Helsinki" t2="Kotka"/>
+                <connection t1="Helsinki" t2="Lahti"/>
+                <connection t1="Helsinki" t2="South Baltic"/>
+                <connection t1="Helsinki" t2="Tampere"/>
+                <connection t1="Helsinki" t2="Turku"/>
+                <connection t1="Kotka" t2="Lahti"/>
+                <connection t1="Kotka" t2="Vilpuri"/>
+                <connection t1="Vilpuri" t2="Vyborg"/>
+                <connection t1="Tampere" t2="Turku"/>
+                <connection t1="Tampere" t2="Vassa"/>
+                <connection t1="Inari" t2="Kasivarsi"/>
+                <connection t1="Inari" t2="Lokka"/>
+                <connection t1="Inari" t2="Norway"/>
+                <connection t1="Kemi" t2="North Baltic"/>
+                <connection t1="Kemi" t2="Oulu"/>
+                <connection t1="Kemi" t2="Salla"/>
+                <connection t1="Kemi" t2="Sweden"/>
+                <connection t1="Kemi" t2="Swedish Assistance"/>
+                <connection t1="Ladoga" t2="Lake Ladoga"/>
+                <connection t1="Ladoga" t2="Olonets"/>
+                <connection t1="Ladoga" t2="Savonlinna"/>
+                <connection t1="Ladoga" t2="Segezha"/>
+                <connection t1="Lahti" t2="Savonlinna"/>
+                <connection t1="Lahti" t2="Tampere"/>
+                <connection t1="Oulu" t2="Salla"/>
+                <connection t1="Oulu" t2="Vassa"/>
+                <connection t1="Rybachy" t2="White Sea North"/>
+                <connection t1="Savonlinna" t2="Vilpuri"/>
+                <connection t1="Petsamo" t2="Rybachy"/>
+                <connection t1="Petsamo" t2="White Sea North"/>
+                <connection t1="Kuopio" t2="Ladoga"/>
+                <connection t1="Kuopio" t2="Lahti"/>
+                <connection t1="Kuopio" t2="Salla"/>
+                <connection t1="Kuopio" t2="Savonlinna"/>
+                <connection t1="International Assistance" t2="Petsamo"/>
+                <connection t1="Kasivarsi" t2="Kemi"/>
+                <connection t1="Kasivarsi" t2="Lokka"/>
+                <connection t1="Kasivarsi" t2="Norway"/>
+                <connection t1="Kasivarsi" t2="Salla"/>
+                <connection t1="Kasivarsi" t2="Sweden"/>
+                <connection t1="Kingisepp" t2="Volosovo"/>
+                <connection t1="Volkhav" t2="Volosovo"/>
+                <connection t1="Lenningrad" t2="Volkhav"/>
+                <connection t1="Lenningrad" t2="Volosovo"/>
+                <connection t1="Lenningrad" t2="Vyborg"/>
+                <connection t1="Kem" t2="Salla"/>
+                <connection t1="Kem" t2="White Sea South"/>
+                <connection t1="Arkhangelsk" t2="Belomorsk"/>
+                <connection t1="Arkhangelsk" t2="Kem"/>
+                <connection t1="Arkhangelsk" t2="Mezen"/>
+                <connection t1="Arkhangelsk" t2="Mirny"/>
+                <connection t1="Arkhangelsk" t2="Segezha"/>
+                <connection t1="Arkhangelsk" t2="White Sea South"/>
+                <connection t1="Mirny" t2="Petrozavodsk"/>
+                <connection t1="Kola" t2="Murmansk"/>
+                <connection t1="Kola" t2="White Sea North"/>
+                <connection t1="Kola" t2="White Sea South"/>
+                <connection t1="Mezen" t2="White Sea South"/>
+                <connection t1="Kandalaksha" t2="Kem"/>
+                <connection t1="Kandalaksha" t2="Kola"/>
+                <connection t1="Kandalaksha" t2="Lokka"/>
+                <connection t1="Kandalaksha" t2="Murmansk"/>
+                <connection t1="Kandalaksha" t2="Salla"/>
+                <connection t1="Kandalaksha" t2="White Sea South"/>
+                <connection t1="Olonets" t2="Petrozavodsk"/>
+                <connection t1="Olonets" t2="Segezha"/>
+                <connection t1="Olonets" t2="Volkhav"/>
+                <connection t1="Belomorsk" t2="Kem"/>
+                <connection t1="Belomorsk" t2="Kuopio"/>
+                <connection t1="Belomorsk" t2="Ladoga"/>
+                <connection t1="Belomorsk" t2="Salla"/>
+                <connection t1="Belomorsk" t2="Segezha"/>
+                <connection t1="Tikhvin" t2="Volkhav"/>
+                <connection t1="Tikhvin" t2="Volosovo"/>
+                <connection t1="Murmansk" t2="Petsamo"/>
+                <connection t1="Murmansk" t2="White Sea North"/>
+                <connection t1="Petrozavodsk" t2="Tikhvin"/>
+                <connection t1="Petrozavodsk" t2="Volkhav"/>
+                <connection t1="Chiza" t2="Mezen"/>
+                <connection t1="Chiza" t2="White Sea North"/>
+                <connection t1="Chiza" t2="White Sea South"/>
+                <connection t1="White Sea North" t2="White Sea South"/>
+                <connection t1="Mid Baltic" t2="North Baltic"/>
+                <connection t1="Mid Baltic" t2="Pori"/>
+                <connection t1="Mid Baltic" t2="South Baltic"/>
+                <connection t1="Mid Baltic" t2="South Sweden"/>
+                <connection t1="Mid Baltic" t2="Sweden"/>
+                <connection t1="Mid Baltic" t2="Vassa"/>
+                <connection t1="Lake Ladoga" t2="Lenningrad"/>
+                <connection t1="Lake Ladoga" t2="Olonets"/>
+                <connection t1="Lake Ladoga" t2="Savonlinna"/>
+                <connection t1="Lake Ladoga" t2="Vilpuri"/>
+                <connection t1="Lake Ladoga" t2="Volkhav"/>
+                <connection t1="Lake Ladoga" t2="Vyborg"/>
+                <connection t1="South Baltic" t2="South Sweden"/>
+                <connection t1="South Baltic" t2="Turku"/>
+                <connection t1="Estonia" t2="Kingisepp"/>
+                <connection t1="Estonia" t2="South Baltic"/>
+                <connection t1="Barents Sea" t2="Norway"/>
+                <connection t1="Barents Sea" t2="White Sea North"/>
+                <connection t1="North Baltic" t2="Oulu"/>
+                <connection t1="North Baltic" t2="Sweden"/>
+                <connection t1="North Baltic" t2="Vassa"/>
+                <connection t1="East Bay of Finland" t2="Kingisepp"/>
+                <connection t1="East Bay of Finland" t2="Lenningrad"/>
+                <connection t1="East Bay of Finland" t2="Volosovo"/>
+                <connection t1="East Bay of Finland" t2="Vyborg"/>
+                <connection t1="Bay of Finland" t2="East Bay of Finland"/>
+                <connection t1="Bay of Finland" t2="Estonia"/>
+                <connection t1="Bay of Finland" t2="Helsinki"/>
+                <connection t1="Bay of Finland" t2="Kingisepp"/>
+                <connection t1="Bay of Finland" t2="Kotka"/>
+                <connection t1="Bay of Finland" t2="South Baltic"/>
+                <connection t1="Bay of Finland" t2="Vilpuri"/>
+                <connection t1="Norway" t2="Petsamo"/>
+                <connection t1="Norway" t2="Sweden"/>
+                <connection t1="Norway" t2="White Sea North"/>
+        </map>
+        <resourceList>
+                <resource name="techTokens"/>
+                <resource name="PUs"/>
+        </resourceList>
+        <playerList>
+                <!-- In turn order -->
+                <player name="Finns" optional="false"/>
+                <player name="Russians" optional="false"/>
+
+                <alliance player="Finns" alliance="Axis"/>
+                <alliance player="Russians" alliance="Allies"/>
+        </playerList>
+        <unitList>
+                <unit name="Armour"/>
+                <unit name="Artillery"/>
+                <unit name="Battleship"/>
+                <unit name="Bomber"/>
+                <unit name="Cruiser"/>
+                <unit name="Destroyer"/>
+                <unit name="Elite"/>
+                <unit name="Factory"/>
+                <unit name="Fighter"/>
+                <unit name="Forest"/>
+                <unit name="Fort"/>
+                <unit name="Infantry"/>
+                <unit name="Time"/>
+                <unit name="Transport"/>
+		<unit name="Conscript"/>
+        </unitList>
+        <gamePlay>
+                <delegate name="initDelegate" javaClass="games.strategy.triplea.delegate.InitializationDelegate" display="Initializing Delegates"/>
+                <delegate name="bid" javaClass="games.strategy.triplea.delegate.BidPurchaseDelegate" display="Bid Purchase"/>
+                <delegate name="placeBid" javaClass="games.strategy.triplea.delegate.BidPlaceDelegate" display="Bid Placement"/>
+                <delegate name="tech" javaClass="games.strategy.triplea.delegate.TechnologyDelegate" display="Research Technology"/>
+                <delegate name="tech_activation" javaClass="games.strategy.triplea.delegate.TechActivationDelegate" display="Activate Technology"/>
+                <delegate name="purchase" javaClass="games.strategy.triplea.delegate.PurchaseDelegate" display="Purchase Units"/>
+                <delegate name="purchaseNoPU" javaClass="games.strategy.triplea.delegate.NoPUPurchaseDelegate" display="Purchase Units"/>
+                <delegate name="move" javaClass="games.strategy.triplea.delegate.MoveDelegate" display="Combat Move"/>
+                <delegate name="battle" javaClass="games.strategy.triplea.delegate.BattleDelegate" display="Combat"/>
+                <delegate name="place" javaClass="games.strategy.triplea.delegate.PlaceDelegate" display="Place Units"/>
+                <delegate name="endTurn" javaClass="games.strategy.triplea.delegate.EndTurnDelegate" display="Turn Complete"/>
+                <delegate name="endTurnNoPU" javaClass="games.strategy.triplea.delegate.NoPUEndTurnDelegate" display="Turn Complete"/>
+                <delegate name="endRound" javaClass="games.strategy.triplea.delegate.EndRoundDelegate" display="Round Complete"/>
+                <sequence>
+                        <step name="gameInitDelegate" delegate="initDelegate" maxRunCount="1"/>
+                        <step name="FinnsBidPlace" delegate="placeBid" player="Finns" maxRunCount="1"/>
+                        <step name="RussiansBidPlace" delegate="placeBid" player="Russians" maxRunCount="1"/>
+                        <step name="RussiansTech" delegate="tech" player="Russians"/>
+                        	<step name="RussiansPurchase" delegate="purchaseNoPU" player="Russians"/>
+                        <step name="RussiansCombatMove" delegate="move" player="Russians"/>
+                        <step name="RussiansBattle" delegate="battle" player="Russians"/>
+                        <step name="RussiansNonCombatMove" delegate="move" player="Russians" display="Non Combat Move"/>
+                        <step name="RussiansPlace" delegate="place" player="Russians"/>
+                        <step name="RussiansTechActivation" delegate="tech_activation" player="Russians"/>
+                        	<step name="RussiansEndTurn" delegate="endTurnNoPU" player="Russians"/>
+                        <step name="FinnsTech" delegate="tech" player="Finns"/>
+                        	<step name="FinnsPurchase" delegate="purchaseNoPU" player="Finns"/>
+                        <step name="FinnsCombatMove" delegate="move" player="Finns"/>
+                        <step name="FinnsBattle" delegate="battle" player="Finns"/>
+                        <step name="FinnsNonCombatMove" delegate="move" player="Finns" display="Non Combat Move"/>
+                        <step name="FinnsPlace" delegate="place" player="Finns"/>
+                        <step name="FinnsTechActivation" delegate="tech_activation" player="Finns"/>
+                        	<step name="FinnsEndTurn" delegate="endTurn" player="Finns"/>
+                        <step name="endRoundStep" delegate="endRound"/>
+                </sequence>
+        </gamePlay>
+        <production>
+                <!-- Unit Production Cost -->
+                <productionRule name="buyArmour">
+                        <cost resource="PUs" quantity="5"/>
+                        <result resourceOrUnit="Armour" quantity="0"/>
+                </productionRule>
+                <productionRule name="buyArtillery">
+                        <cost resource="PUs" quantity="4"/>
+                        <result resourceOrUnit="Artillery" quantity="0"/>
+                </productionRule>
+                <productionRule name="buyBattleship">
+                        <cost resource="PUs" quantity="20"/>
+                        <result resourceOrUnit="Battleship" quantity="0"/>
+                </productionRule>
+                <productionRule name="buyBomber">
+                        <cost resource="PUs" quantity="12"/>
+                        <result resourceOrUnit="Bomber" quantity="0"/>
+                </productionRule>
+                <productionRule name="buyCruiser">
+                        <cost resource="PUs" quantity="12"/>
+                        <result resourceOrUnit="Cruiser" quantity="0"/>
+                </productionRule>
+                <productionRule name="buyDestroyer">
+                        <cost resource="PUs" quantity="8"/>
+                        <result resourceOrUnit="Destroyer" quantity="0"/>
+                </productionRule>
+                <productionRule name="buyElite">
+                        <cost resource="PUs" quantity="5"/>
+                        <result resourceOrUnit="Elite" quantity="0"/>
+                </productionRule>
+                <productionRule name="buyFactory">
+                        <cost resource="PUs" quantity="99"/>
+                        <result resourceOrUnit="Factory" quantity="0"/>
+                </productionRule>
+                <productionRule name="buyFighter">
+                        <cost resource="PUs" quantity="9"/>
+                        <result resourceOrUnit="Fighter" quantity="0"/>
+                </productionRule>
+                <productionRule name="buyForest">
+                        <cost resource="PUs" quantity="2"/>
+                        <result resourceOrUnit="Forest" quantity="0"/>
+                </productionRule>
+                <productionRule name="buyFort">
+                        <cost resource="PUs" quantity="8"/>
+                        <result resourceOrUnit="Fort" quantity="0"/>
+                </productionRule>
+                <productionRule name="buyInfantry">
+                        <cost resource="PUs" quantity="4"/>
+                        <result resourceOrUnit="Infantry" quantity="0"/>
+                </productionRule>
+                <productionRule name="buyTime">
+                        <cost resource="PUs" quantity="3"/>
+                        <result resourceOrUnit="Time" quantity="1"/>
+                </productionRule>
+                <productionRule name="buyTransport">
+                        <cost resource="PUs" quantity="6"/>
+                        <result resourceOrUnit="Transport" quantity="0"/>
+                </productionRule>
+                <productionFrontier name="FinnsFrontier">
+                        
+			<frontierRules name="buyTime"/>
+                </productionFrontier>
+                <productionFrontier name="RussiansFrontier">
+                        
+			<frontierRules name="buyTime"/>
+                </productionFrontier>
+                <playerProduction player="Finns" frontier="FinnsFrontier"/>
+                <playerProduction player="Russians" frontier="RussiansFrontier"/>
+        </production>
+        <attachmentList>
+                    <attachment name="techAttachment" attachTo="Finns" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
+                           <option name="warBonds" value="True"/>
+			   <option name="heavyBomber" value="true"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Armour" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="attack" value="4"/>
+                         <option name="canBlitz" value="true"/>
+                         <option name="defense" value="2"/>
+                         <option name="movement" value="2"/>
+                         <option name="transportCost" value="3"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Artillery" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="artillery" value="true"/>
+                         <option name="attack" value="2"/>
+                         <option name="defense" value="3"/>
+                         <option name="movement" value="1"/>
+                         <option name="transportCost" value="3"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Battleship" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="attack" value="4"/>
+                         <option name="defense" value="4"/>
+                         <option name="isSea" value="true"/>
+                         <option name="isTwoHit" value="true"/>
+                         <option name="movement" value="1"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Bomber" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="attack" value="4"/>
+                         <option name="defense" value="1"/>
+                         <option name="isAir" value="true"/>
+                         <option name="movement" value="5"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Cruiser" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="attack" value="3"/>
+                         <option name="defense" value="3"/>
+                         <option name="isSea" value="true"/>
+                         <option name="movement" value="1"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Destroyer" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="attack" value="2"/>
+                         <option name="defense" value="2"/>
+                         <option name="isSea" value="true"/>
+                         <option name="movement" value="1"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Elite" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="artillerySupportable" value="true"/>
+                         <option name="attack" value="5"/>
+                         <option name="defense" value="7"/>
+                         <option name="movement" value="1"/>
+                         <option name="transportCost" value="2"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Factory" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="movement" value="0"/>
+                         <option name="isFactory" value="True"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Fighter" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="attack" value="3"/>
+                         <option name="defense" value="3"/>
+                         <option name="isAir" value="true"/>
+                         <option name="movement" value="3"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Forest" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="isTwoHit" value="true"/>
+                         <option name="movement" value="0"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Fort" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="defense" value="6"/>
+                         <option name="isTwoHit" value="true"/>
+                         <option name="movement" value="0"/>
+			 <option name="isAir" value="true"/>
+			 <option name="isStrategicBomber" value="true"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Infantry" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="attack" value="1"/>
+                         <option name="defense" value="4"/>
+                         <option name="movement" value="1"/>
+                         <option name="transportCost" value="2"/>
+                         <option name="artillerySupportable" value="true"/>
+			<option name="isInfantry" value="true"/>
+                    </attachment>
+		   <attachment name="unitAttachment" attachTo="Conscript" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="attack" value="1"/>
+                         <option name="defense" value="1"/>
+                         <option name="movement" value="1"/>
+                         <option name="transportCost" value="2"/>
+                         <option name="artillerySupportable" value="true"/>
+			<option name="isInfantry" value="true"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Time" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="movement" value="0"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Transport" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="isSea" value="true"/>
+                         <option name="movement" value="1"/>
+                         <option name="transportCapacity" value="5"/>
+                    </attachment>
+                    <attachment name="territoryAttachment" attachTo="Pori" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Salla" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Lokka" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Jyvaskyla" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Helsinki" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Vassa" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Kotka" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Vilpuri" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Turku" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Tampere" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Inari" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Kemi" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Ladoga" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Lahti" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Oulu" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Rybachy" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Savonlinna" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Petsamo" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Kuopio" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Swedish Assistance" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="International Assistance" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Vyborg" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Time Limit" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="3"/>
+                        <option name="capital" value="Finns"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Kasivarsi" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="victoryCity" value="1"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Kingisepp" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Volkhav" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Lenningrad" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="capital" value="Russians"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Kem" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Arkhangelsk" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Mirny" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Kola" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Mezen" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Kandalaksha" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Olonets" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Segezha" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Belomorsk" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Tikhvin" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Murmansk" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Volosovo" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Petrozavodsk" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Chiza" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Sweden" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+			<option name="isImpassable" value="true"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Estonia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+			<option name="isImpassable" value="true"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="South Sweden" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+			<option name="isImpassable" value="true"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Norway" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+			<option name="isImpassable" value="true"/>
+                   </attachment>
+
+<!-- Chinese no PU Rules FINNS -->
+
+		<attachment name="rulesAttachment" attachTo="Finns" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+                	<option name="productionPerXTerritories" value="Conscript" count="5"/>
+				<!-- if you are using productionPerXTerritories, you can have only territories worth at least 1 pu count towards the X by setting the game property "Production Per Valued Territory Restricted". 
+					the amount produced will be increased by 1 infantry if you are using PacificTheater and you control territories called "India", "Burma", "Yunnan", "Szechwan" -->
+                	<option name="placementAnyTerritory" value="true"/>
+                	<option name="placementCapturedTerritory" value="true"/>
+				<!-- placementPerTerritory governs if you can or can not place in that territory, based on the number of owned units in that territory.  You may place in any territory with LESS units than the given value
+					A value greater than Zero is required to be able to produce infinite units (or infinite up to maxPlacePerTerritory, which you can set too) -->
+                	<option name="placementPerTerritory" value="700"/>
+				<!-- maxPlacePerTerritory governs the max you may place per turn per territory (can override factory rules and infinite placement rules) -->
+                	<option name="maxPlacePerTerritory" value="99"/>
+			<option name="unlimitedProduction" value="false"/>
+				<!-- dominatingFirstRoundAttack means that the very first round of the game, all enemies defend on a "1" instead of their normal defense. negateDominatingFirstRoundAttack means that this player is not affected by the dominatingFirstRoundAttack
+				<option name="dominatingFirstRoundAttack" value="true"/>
+				<option name="negateDominatingFirstRoundAttack" value="true"/> -->
+				<!-- placementInCapitalRestricted means that the player may only place units in their capitol
+				<option name="placementInCapitalRestricted" value="true"/> -->
+                </attachment>
+<!-- Chinese no PU Rules RUSSIANS -->
+
+		<attachment name="rulesAttachment" attachTo="Russians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+                	<option name="productionPerXTerritories" value="Infantry" count="3"/>
+			<option name="productionPerXTerritories" value="Artillery" count="5"/>
+			<option name="productionPerXTerritories" value="Armour" count="10"/>
+			<option name="productionPerXTerritories" value="Fighter" count="15"/>
+				<!-- if you are using productionPerXTerritories, you can have only territories worth at least 1 pu count towards the X by setting the game property "Production Per Valued Territory Restricted". 
+					the amount produced will be increased by 1 infantry if you are using PacificTheater and you control territories called "India", "Burma", "Yunnan", "Szechwan" -->
+                	<option name="placementAnyTerritory" value="true"/>
+                	<option name="placementCapturedTerritory" value="true"/>
+				<!-- placementPerTerritory governs if you can or can not place in that territory, based on the number of owned units in that territory.  You may place in any territory with LESS units than the given value
+					A value greater than Zero is required to be able to produce infinite units (or infinite up to maxPlacePerTerritory, which you can set too) -->
+                	<option name="placementPerTerritory" value="700"/>
+				<!-- maxPlacePerTerritory governs the max you may place per turn per territory (can override factory rules and infinite placement rules) -->
+                	<option name="maxPlacePerTerritory" value="6"/>
+			<option name="unlimitedProduction" value="false"/>
+				<!-- dominatingFirstRoundAttack means that the very first round of the game, all enemies defend on a "1" instead of their normal defense. negateDominatingFirstRoundAttack means that this player is not affected by the dominatingFirstRoundAttack
+				<option name="dominatingFirstRoundAttack" value="true"/>
+				<option name="negateDominatingFirstRoundAttack" value="true"/> -->
+				<!-- placementInCapitalRestricted means that the player may only place units in their capitol
+				<option name="placementInCapitalRestricted" value="true"/> -->
+                </attachment>
+        </attachmentList>
+        <initialize>
+                <ownerInitialize>
+                        <territoryOwner territory="Pori" owner="Finns"/>
+                        <territoryOwner territory="Salla" owner="Finns"/>
+                        <territoryOwner territory="Lokka" owner="Finns"/>
+                        <territoryOwner territory="Jyvaskyla" owner="Finns"/>
+                        <territoryOwner territory="Helsinki" owner="Finns"/>
+                        <territoryOwner territory="Vassa" owner="Finns"/>
+                        <territoryOwner territory="Kotka" owner="Finns"/>
+                        <territoryOwner territory="Vilpuri" owner="Finns"/>
+                        <territoryOwner territory="Turku" owner="Finns"/>
+                        <territoryOwner territory="Tampere" owner="Finns"/>
+                        <territoryOwner territory="Inari" owner="Finns"/>
+                        <territoryOwner territory="Kemi" owner="Finns"/>
+                        <territoryOwner territory="Ladoga" owner="Finns"/>
+                        <territoryOwner territory="Lahti" owner="Finns"/>
+                        <territoryOwner territory="Oulu" owner="Finns"/>
+                        <territoryOwner territory="Rybachy" owner="Finns"/>
+                        <territoryOwner territory="Savonlinna" owner="Finns"/>
+                        <territoryOwner territory="Petsamo" owner="Finns"/>
+                        <territoryOwner territory="Kuopio" owner="Finns"/>
+                        <territoryOwner territory="Swedish Assistance" owner="Finns"/>
+                        <territoryOwner territory="International Assistance" owner="Finns"/>
+                        <territoryOwner territory="Vyborg" owner="Finns"/>
+                        <territoryOwner territory="Time Limit" owner="Finns"/>
+                        <territoryOwner territory="Kasivarsi" owner="Finns"/>
+                        <territoryOwner territory="Kingisepp" owner="Russians"/>
+                        <territoryOwner territory="Volkhav" owner="Russians"/>
+                        <territoryOwner territory="Lenningrad" owner="Russians"/>
+                        <territoryOwner territory="Kem" owner="Russians"/>
+                        <territoryOwner territory="Arkhangelsk" owner="Russians"/>
+                        <territoryOwner territory="Mirny" owner="Russians"/>
+                        <territoryOwner territory="Kola" owner="Russians"/>
+                        <territoryOwner territory="Mezen" owner="Russians"/>
+                        <territoryOwner territory="Kandalaksha" owner="Russians"/>
+                        <territoryOwner territory="Olonets" owner="Russians"/>
+                        <territoryOwner territory="Segezha" owner="Russians"/>
+                        <territoryOwner territory="Belomorsk" owner="Russians"/>
+                        <territoryOwner territory="Tikhvin" owner="Russians"/>
+                        <territoryOwner territory="Murmansk" owner="Russians"/>
+                        <territoryOwner territory="Volosovo" owner="Russians"/>
+                        <territoryOwner territory="Petrozavodsk" owner="Russians"/>
+                        <territoryOwner territory="Chiza" owner="Russians"/>
+                </ownerInitialize>
+                <unitInitialize>
+			<unitPlacement unitType="Fort" territory="Pori" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Pori" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Pori" quantity="3" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Pori" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Salla" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Salla" quantity="13" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Salla" quantity="3" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Lokka" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Lokka" quantity="8" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Lokka" quantity="5" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Jyvaskyla" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Jyvaskyla" quantity="7" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Jyvaskyla" quantity="3" owner="Finns"/>
+                        <unitPlacement unitType="Armour" territory="Helsinki" quantity="3" owner="Finns"/>
+                        <unitPlacement unitType="Artillery" territory="Helsinki" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Bomber" territory="Helsinki" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Helsinki" quantity="6" owner="Finns"/>
+                        <unitPlacement unitType="Fighter" territory="Helsinki" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Fort" territory="Helsinki" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Helsinki" quantity="8" owner="Finns"/>
+                        <unitPlacement unitType="Artillery" territory="Vassa" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Vassa" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Vassa" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Vassa" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Armour" territory="Kotka" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Artillery" territory="Kotka" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Kotka" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Fighter" territory="Kotka" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Kotka" quantity="3" owner="Finns"/>
+                        <unitPlacement unitType="Fort" territory="Kotka" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Kotka" quantity="6" owner="Finns"/>
+                        <unitPlacement unitType="Artillery" territory="Vilpuri" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Vilpuri" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Vilpuri" quantity="3" owner="Finns"/>
+                        <unitPlacement unitType="Fort" territory="Vilpuri" quantity="7" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Vilpuri" quantity="5" owner="Finns"/>
+                        <unitPlacement unitType="Armour" territory="Turku" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Artillery" territory="Turku" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Turku" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Turku" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Fort" territory="Turku" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Turku" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Tampere" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Tampere" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Tampere" quantity="3" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Inari" quantity="8" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Inari" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Kemi" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Kemi" quantity="8" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Kemi" quantity="3" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Ladoga" quantity="5" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Ladoga" quantity="10" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Ladoga" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Lahti" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Lahti" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Lahti" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Oulu" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Oulu" quantity="5" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Oulu" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Rybachy" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Artillery" territory="Savonlinna" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Savonlinna" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Savonlinna" quantity="7" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Savonlinna" quantity="5" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Petsamo" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Petsamo" quantity="3" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Petsamo" quantity="5" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Kuopio" quantity="3" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Kuopio" quantity="11" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Kuopio" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Artillery" territory="Swedish Assistance" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Swedish Assistance" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Fighter" territory="Swedish Assistance" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Swedish Assistance" quantity="12" owner="Finns"/>
+                        <unitPlacement unitType="Armour" territory="International Assistance" quantity="6" owner="Finns"/>
+                        <unitPlacement unitType="Artillery" territory="International Assistance" quantity="6" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="International Assistance" quantity="10" owner="Finns"/>
+                        <unitPlacement unitType="Fighter" territory="International Assistance" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="International Assistance" quantity="12" owner="Finns"/>
+                        <unitPlacement unitType="Artillery" territory="Vyborg" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Elite" territory="Vyborg" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Vyborg" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Fort" territory="Vyborg" quantity="12" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Vyborg" quantity="6" owner="Finns"/>
+                        <unitPlacement unitType="Factory" territory="Time Limit" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Time" territory="Time Limit" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Forest" territory="Kasivarsi" quantity="8" owner="Finns"/>
+                        <unitPlacement unitType="Infantry" territory="Kasivarsi" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Artillery" territory="Kingisepp" quantity="4" owner="Russians"/>
+                        <unitPlacement unitType="Fighter" territory="Kingisepp" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Kingisepp" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Kingisepp" quantity="12" owner="Russians"/>
+                        <unitPlacement unitType="Artillery" territory="Volkhav" quantity="6" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Volkhav" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Volkhav" quantity="12" owner="Russians"/>
+                        <unitPlacement unitType="Armour" territory="Lenningrad" quantity="4" owner="Russians"/>
+                        <unitPlacement unitType="Artillery" territory="Lenningrad" quantity="8" owner="Russians"/>
+                        <unitPlacement unitType="Bomber" territory="Lenningrad" quantity="2" owner="Russians"/>
+                        <unitPlacement unitType="Fighter" territory="Lenningrad" quantity="3" owner="Russians"/>
+                        <unitPlacement unitType="Fort" territory="Lenningrad" quantity="10" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Lenningrad" quantity="16" owner="Russians"/>
+                        <unitPlacement unitType="Armour" territory="Kem" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Artillery" territory="Kem" quantity="3" owner="Russians"/>
+                        <unitPlacement unitType="Fighter" territory="Kem" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Kem" quantity="5" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Kem" quantity="8" owner="Russians"/>
+                        <unitPlacement unitType="Armour" territory="Arkhangelsk" quantity="2" owner="Russians"/>
+                        <unitPlacement unitType="Artillery" territory="Arkhangelsk" quantity="2" owner="Russians"/>
+                        <unitPlacement unitType="Fighter" territory="Arkhangelsk" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Arkhangelsk" quantity="2" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Arkhangelsk" quantity="6" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Mirny" quantity="2" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Mirny" quantity="8" owner="Russians"/>
+                        <unitPlacement unitType="Fighter" territory="Kola" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Kola" quantity="2" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Kola" quantity="4" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Mezen" quantity="6" owner="Russians"/>
+                        <unitPlacement unitType="Armour" territory="Kandalaksha" quantity="2" owner="Russians"/>
+                        <unitPlacement unitType="Artillery" territory="Kandalaksha" quantity="4" owner="Russians"/>
+                        <unitPlacement unitType="Fighter" territory="Kandalaksha" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Kandalaksha" quantity="3" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Kandalaksha" quantity="16" owner="Russians"/>
+                        <unitPlacement unitType="Armour" territory="Olonets" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Artillery" territory="Olonets" quantity="3" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Olonets" quantity="3" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Olonets" quantity="10" owner="Russians"/>
+                        <unitPlacement unitType="Armour" territory="Segezha" quantity="2" owner="Russians"/>
+                        <unitPlacement unitType="Artillery" territory="Segezha" quantity="4" owner="Russians"/>
+                        <unitPlacement unitType="Fighter" territory="Segezha" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Segezha" quantity="4" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Segezha" quantity="10" owner="Russians"/>
+                        <unitPlacement unitType="Armour" territory="Belomorsk" quantity="3" owner="Russians"/>
+                        <unitPlacement unitType="Artillery" territory="Belomorsk" quantity="3" owner="Russians"/>
+                        <unitPlacement unitType="Fighter" territory="Belomorsk" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Belomorsk" quantity="6" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Belomorsk" quantity="12" owner="Russians"/>
+                        <unitPlacement unitType="Armour" territory="Tikhvin" quantity="2" owner="Russians"/>
+                        <unitPlacement unitType="Artillery" territory="Tikhvin" quantity="8" owner="Russians"/>
+                        <unitPlacement unitType="Fighter" territory="Tikhvin" quantity="2" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Tikhvin" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Tikhvin" quantity="12" owner="Russians"/>
+                        <unitPlacement unitType="Artillery" territory="Murmansk" quantity="2" owner="Russians"/>
+                        <unitPlacement unitType="Fighter" territory="Murmansk" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Murmansk" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Murmansk" quantity="6" owner="Russians"/>
+                        <unitPlacement unitType="Artillery" territory="Volosovo" quantity="3" owner="Russians"/>
+                        <unitPlacement unitType="Fighter" territory="Volosovo" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Volosovo" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Volosovo" quantity="10" owner="Russians"/>
+                        <unitPlacement unitType="Artillery" territory="Petrozavodsk" quantity="6" owner="Russians"/>
+                        <unitPlacement unitType="Fighter" territory="Petrozavodsk" quantity="2" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Petrozavodsk" quantity="2" owner="Russians"/>
+                        <unitPlacement unitType="Infantry" territory="Petrozavodsk" quantity="12" owner="Russians"/>
+                        <unitPlacement unitType="Forest" territory="Chiza" quantity="2" owner="Russians"/>
+                        <unitPlacement unitType="Destroyer" territory="White Sea North" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Destroyer" territory="White Sea South" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Transport" territory="White Sea South" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Cruiser" territory="North Baltic" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Destroyer" territory="North Baltic" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Battleship" territory="East Bay of Finland" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Cruiser" territory="East Bay of Finland" quantity="3" owner="Russians"/>
+                        <unitPlacement unitType="Destroyer" territory="East Bay of Finland" quantity="5" owner="Russians"/>
+                        <unitPlacement unitType="Transport" territory="East Bay of Finland" quantity="1" owner="Russians"/>
+                        <unitPlacement unitType="Battleship" territory="Bay of Finland" quantity="1" owner="Finns"/>
+                        <unitPlacement unitType="Cruiser" territory="Bay of Finland" quantity="2" owner="Finns"/>
+                        <unitPlacement unitType="Destroyer" territory="Bay of Finland" quantity="4" owner="Finns"/>
+                        <unitPlacement unitType="Transport" territory="Bay of Finland" quantity="1" owner="Finns"/>
+                </unitInitialize>
+                <resourceInitialize>
+                        <resourceGiven player="Finns" resource="PUs" quantity="0"/>
+                        <resourceGiven player="Russians" resource="PUs" quantity="0"/>
+                </resourceInitialize>
+        </initialize>
+        <propertyList>
+
+
+				<property name="Pacific Theater" value="false" editable="false">
+						<boolean/>
+				</property>
+
+				
+				<property name="Movement By Territory Restricted" value="false" editable="false">
+						<boolean/>
+				</property>
+
+				<property name="Production Per X Territories Restricted" value="true" editable="false">
+						<boolean/>
+				</property>
+
+						
+				<property name="Production Per Valued Territory Restricted" value="false" editable="false">
+						<boolean/>
+				</property>
+
+				<property name="Unit Placement Per Territory Restricted" value="true" editable="false">
+						<boolean/>
+				</property>
+
+				<property name="Place in Any Territory" value="true" editable="false">
+						<boolean/>
+				</property>
+
+				<property name="Unplaced units live when not placed" value ="true" editable="false">
+						<boolean/>
+				</property>
+
+
+                <property name="Finns bid" value="0" editable="false">
+                        <number min="0" max="500000"/>
+                </property>
+                <property name="Russians bid" value="0" editable="false">
+                        <number min="0" max="500000"/>
+                </property>
+                <property name="Anniversary Edition Land Production" value="false" editable="false">
+                        <boolean/>
+                </property>
+                <property name="mapName" value="Finnish_Winter_War" editable="false"/>
+                <property name="notes">
+                        <value>
+                        <![CDATA[
+
+<html>
+<body bgcolor="EEEEEE" align="center">
+
+<div style="text-align: center;">
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>Winter War<br>  </th>
+</tr>
+<th<b>Designed by mglmosaic</b></th>
+
+
+
+</tr>
+</table>
+<br>
+<br>
+
+<tr>
+<th style="font-size:110%;000000"colspan="2">Version:0.5</th>
+</tr>
+</table>
+<br>
+<br>
+
+<b>November 30th 1939  </b> <br>
+<b>With the signing of the Molotov-Ribbentrop pact, Finland is left to fend off the Red Giant alone<br><b>Its army fully mobilized the finns have dug in and are ready for a fight <br>
+<b>Can they hold out long enough for world oppinion to force an end to this war? Or will once again they become a simple province of a Greater Soviet Empire </b> <br>
+<br>
+<br>
+<br>
+<b>Win conditions are as follows:<br>
+<b>	Finns have 15 time units at the start of their turn<br>
+<b>	Lenningrad is controlled by finns at the start of their turn<br>
+<b>	USSR Controls 11 victory cities at the start of their turn<br>
+<br>
+<b>OR	Somebody gives up<br><br><br>
+Game uses 8 sided die<br>
+<body bgcolor="EEEEEE" align="center">
+
+<div style="text-align: center;">
+<br>
+
+<table border="1"bgcolor="CCAA77">
+<tr>
+
+	<th style="font-size:120%;000000"bgcolor="997744"colspan="7">Land Units</th>
+	</tr>
+<tr bgcolor="CDBA96">
+	<th>Unit name</th>
+	<th>att</th>
+	<th>def</th>
+	<th>move</th>
+	<th>cost</th>
+	<th>size</th>
+	<th>special abilities</th>
+	</tr>
+
+	<tr bgcolor="CCCC99">
+	<td>Armour</td>
+	<td>4</td>
+	<td>2</td>
+	<td>2</td>
+	<td>X</td>
+	<th>3</th>
+	<td>canBlitz</td>
+	</tr>
+
+
+	<td>Artillery</td>
+	<td>2</td>
+	<td>3</td>
+	<td>1</td>
+	<td>X</td>
+	<th>3</th>
+	<td>givesSupport</td>
+	</tr>
+	<tr bgcolor="CCCC99">
+	<td>Elite</td>
+	<td>7</td>
+	<td>7</td>
+	<td>1</td>
+	<td>X</td>
+	<th>2</th>
+	<td>isSupportable</td>
+	</tr>
+	
+	
+	<td>Fort</td>
+	<td>0</td>
+	<td>6</td>
+	<td>0</td>
+	<td>X</td>
+	<th>X</th>
+	<td>2 Hit</td>
+	</tr>
+	<tr bgcolor="CCCC99">
+	<td>Infantry</td>
+	<td>1</td>
+	<td>4</td>
+	<td>1</td>
+	<td>X</td>
+	<th>2</th>
+	<td>isSupportable</td>
+	</tr>
+	
+	
+	
+	<td>Forest</td>
+	<td>0</td>
+	<td>0</td>
+	<td>0</td>
+	<td>X</td>
+	<th>X</th>
+	<td>2 Hit</td>
+	</tr>
+	
+	<tr bgcolor="CCCC99">
+	<td>Conscript</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+	<td>X</td>
+	<th>2</th>
+	<td>isSupportable</td>
+	</tr>
+	
+	<td>Time</td>
+	<td>0</td>
+	<td>0</td>
+	<td>0</td>
+	<td>3</td>
+	<th>X</th>
+	<td>Marks time limit</td>
+	</tr>
+	
+	<tr bgcolor="CCCC99">
+	<td>Factory</td>
+	<td>0</td>
+	<td>0</td>
+	<td>0</td>
+	<td>X</td>
+	<th>X</th>
+	<td>isFactory</td>
+	</tr>
+	
+	
+<tr bgcolor="CDBA96">
+	<th>Unit name</th>
+	<th>att</th>
+	<th>def</th>
+	<th>move</th>
+	<th>cost</th>
+	<th>size</th>
+	<th>special abilities</th>
+	</tr>
+</table>
+<br>
+Finns get 1 conscript for every 5 territories
+<br>
+USSR gets an infantry for every 3 territories, an arty for every 5, armour for every 10
+<br>
+
+
+<table border="1"bgcolor="CCAA77">
+<tr>
+
+	<th style="font-size:120%;000000"bgcolor="997744"colspan="6">Air Units</th>
+	</tr>
+	<tr bgcolor="CDBA96">
+	<th>Unit name</th>
+	<th>att</th>
+	<th>def</th>
+	<th>move</th>
+	<th>cost</th>
+	<th>special abilities</th>
+	</tr>
+
+	<tr bgcolor="CCCC99">
+	<td>Fighter</td>
+	<td>2</td>
+	<td>3</td>
+	<td>3</td>
+	<td>X</td>
+	<td></td>
+	</tr>
+	
+	<td>Bomber</td>
+	<td>4</td>
+	<td>1</td>
+	<td>5</td>
+	<td>X</td>
+	<td></td>
+	</tr>
+	
+	
+	<tr bgcolor="CDBA96">
+	<th>Unit name</th>
+	<th>att</th>
+	<th>def</th>
+	<th>move</th>
+	<th>cost</th>
+	<th>special abilities</th>
+	</tr>
+</table>
+<br>
+Air Units are not purchasable
+USSR gets 1 fighter for every 15 territories
+<br>
+<table border="1"bgcolor="CCAA770">
+<tr>
+
+	<th style="font-size:120%;000000"bgcolor="9977443"colspan="6">Naval Units</th>
+	</tr>
+<tr bgcolor="CDBA96">
+	<th>Unit name</th>
+	<th>att</th>
+	<th>def</th>
+	<th>move</th>
+	<th>cost</th>
+	<th>special abilities</th>
+	</tr>
+
+	<tr bgcolor="CCCC99">
+	<td>Transport</td>
+	<td>0</td>
+	<td>0</td>
+	<td>1</td>
+	<td>X</td>
+	<td>Transport up to 5 in size</td>
+	</tr>
+	
+	<td>Destroyer</td>
+	<td>2</td>
+	<td>2</td>
+	<td>1</td>
+	<td>X</td>
+	<td></td>
+	</tr>
+<tr bgcolor="CCCC99">
+	<td>Cruiser</td>
+	<td>3</td>
+	<td>3</td>
+	<td>1</td>
+	<td>X</td>
+	<td></td>
+	</tr>
+	
+	
+	<td>Battleship</td>
+	<td>4</td>
+	<td>4</td>
+	<td>1</td>
+	<td>X</td>
+	<td>2 Hit</td>
+	</tr>
+
+
+	<tr bgcolor="CDBA96">
+	<th>Unit name</th>
+	<th>att</th>
+	<th>def</th>
+	<th>move</th>
+	<th>cost</th>
+	<th>special abilities</th>
+	</tr>
+</table>
+<br>
+
+Sea Units are not purchasable, what you start with is what you get
+Battleships do not recover
+]]>
+                        </value>
+                </property>
+        </propertyList>
+</game>
